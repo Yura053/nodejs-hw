@@ -1,4 +1,4 @@
-import { Router } frrom 'express';
+import { Router } from 'express';
 import {
      getAllNotes,
   getNoteById,
