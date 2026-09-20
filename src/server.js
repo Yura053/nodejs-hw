@@ -27,9 +27,9 @@ const startServer = async () => {
   app.use(userRoutes);
   app.use(notesRoutes);
 
+  app.use(notFoundHandler);
   app.use(errors());
 
-  app.use(notFoundHandler);
   app.use(errorHandler);
 
   app.listen(PORT, () => {
